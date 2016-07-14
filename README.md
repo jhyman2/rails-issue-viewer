@@ -9,6 +9,8 @@
 ###Preview at localhost:8080
 In a browser, navigate to `localhost:8080` to see the app.
 
+![preview](https://github.com/jhyman2/rails-issue-viewer/blob/master/screenshot.png?raw=true)
+
 ###Test
 `npm test`
 
