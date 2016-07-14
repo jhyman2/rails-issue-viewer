@@ -1,0 +1,29 @@
+/**
+ * Source: https://codepen.io/alanshortis/pen/eJLVXr
+ * By: Alan Shortis
+ *
+ * slightly modified by Jamison Hyman
+ */
+
+$base-line-height: 100px;
+$blue: #333333;
+$off-blue: rgba($blue, 0.2);
+$spin-duration: 1s;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  border-radius: 50%;
+  width: $base-line-height;
+  height: $base-line-height;
+  border: .25rem solid $off-blue;
+  border-top-color: $blue;
+  animation: spin $spin-duration infinite linear;
+}

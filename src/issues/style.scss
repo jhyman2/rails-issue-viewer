@@ -1,0 +1,78 @@
+$shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.1);
+$blue: #1b7fe6;
+$lightgrey: #f6f6f6;
+
+@mixin colored-link() {
+  background-color: $blue;
+  color: white;
+  border-radius: 2px;
+  box-shadow: $shadow;
+  text-decoration: none;
+  padding: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+
+#app-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  font-family: 'Open Sans', sans-serif;
+
+  .main-application {
+    display: flex;
+    justify-content: center;
+
+    .issues-table {
+      width: 80%;
+
+      .nav-button-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .hidden {
+        visibility: hidden;
+      }
+
+      .issue {
+        position: relative;
+        border: 1px solid $blue;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 10px;
+        overflow: auto;
+        box-shadow: $shadow;
+
+        &:nth-child(odd) {
+          background-color: $lightgrey;
+        }
+
+        .labels {
+          max-width: 75%;
+        }
+
+        img {
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          width: 50px;
+          box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.1);
+          border-radius: 30px;
+        }
+      }
+
+      .link-previous {
+        @include colored-link();
+      }
+
+      .link-next {
+        float: right;
+        @include colored-link();
+      }
+
+      .clear-fix {
+        clear: both;
+      }
+    }
+  }
+}

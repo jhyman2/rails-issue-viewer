@@ -1,0 +1,93 @@
+.full-issue {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: auto;
+  justify-content: center;
+  border: 1px solid #1b7fe6;
+  background-color: #f6f6f6;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.1);
+
+  .full-issue-title {
+    background-color: #1b7fe6;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.1);
+    padding: 0 5px;
+
+    h4 {
+      color: white;
+      text-align: center;
+      text-shadow: 1px 1px 1px black;
+    }
+  }
+
+  .full-issue-wrapper {
+    padding: 10px;
+
+    .labels {
+      display: inline;
+      float: right;
+    }
+
+    .full-issue-main-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      .full-issue-body {
+        display: flex;
+        flex-direction: column;
+
+        .full-issue-body {
+          width: 100%;
+          align-self: center;
+          word-wrap: break-word;
+          word-break: break-word;
+        }
+      }
+
+      .bottom-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        a {
+          align-self: flex-end;
+          background-color: #1b7fe6;
+          color: white;
+          border-radius: 2px;
+          box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.1);
+          text-decoration: none;
+          padding: 3px;
+          text-shadow: 1px 1px 2px black;
+        }
+        .full-issue-author {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          text-align: center;
+
+          .full-issue-author-image {
+            align-self: center;
+            width: 50px;
+            height: 50px;
+            box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 30px;
+            margin-bottom: 5px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.comments-header {
+  display: block;
+  margin-top: 50px;
+}
+
+.no-comments {
+  display: block;
+  margin-top: 10px;
+}
