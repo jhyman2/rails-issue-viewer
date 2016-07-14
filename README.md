@@ -1,4 +1,4 @@
-# Twitter/Fabric Coding Challenge
+# Rails Issue Viewer
 
 ###Installation
 `npm install`
