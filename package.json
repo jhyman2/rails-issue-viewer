@@ -1,7 +1,7 @@
 {
-  "name": "TwitterFabricCodingChallenge",
+  "name": "RailsIssueViewer",
   "version": "1.0.0",
-  "description": "Twitter/Fabric coding challenge",
+  "description": "Rails Issue Viewer",
   "engines": {
     "node": ">=6.2.0"
   },
